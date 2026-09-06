@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitalis Clinic — Doctors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo">Vitalis<span>Clinic</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="doctors.html" class="active">Doctors</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="btn-book">Book Now</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Our Doctors</h1>
+    <p>Meet the specialists dedicated to keeping you and your family healthy</p>
+  </div>
+</section>
+
+<section class="doctors-full">
+  <div class="container">
+
+    <div class="doctor-filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+      <button class="filter-btn" data-filter="dental">Dental Care</button>
+      <button class="filter-btn" data-filter="neurology">Neurology</button>
+      <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+      <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+      <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+    </div>
+
+    <div class="doctor-full-grid" id="doctorGrid">
+
+      <div class="doctor-full-card" data-department="cardiology">
+        <div class="doctor-avatar">AM</div>
+        <h3>Dr. Ahmed Mostafa</h3>
+        <p class="doctor-role">Cardiologist</p>
+        <p class="doctor-desc">12+ years of experience in interventional cardiology.</p>
+        <a href="booking.html?doctor=ahmed-mostafa&dept=cardiology" class="btn-secondary">Book Appointment</a>
+      </div>
+
+      <div class="doctor-full-card" data-department="dental">
+        <div class="doctor-avatar">NS</div>
+        <h3>Dr. Nourhan Samir</h3>
+        <p class="doctor-role">Dentist</p>
+        <p class="doctor-desc">Specializes in cosmetic dentistry and oral surgery.</p>
+        <a href="booking.html?doctor=nourhan-samir&dept=dental" class="btn-secondary">Book Appointment</a>
+      </div>
+
+      <div class="doctor-full-card" data-department="neurology">
+        <div class="doctor-avatar">OA</div>
+        <h3>Dr. Omar Adel</h3>
+        <p class="doctor-role">Neurologist</p>
+        <p class="doctor-desc">Focused on the diagnosis of complex neurological disorders.</p>
+        <a href="booking.html?doctor=omar-adel&dept=neurology" class="btn-secondary">Book Appointment</a>
+      </div>
+
+      <div class="doctor-full-card" data-department="orthopedics">
+        <div class="doctor-avatar">KM</div>
+        <h3>Dr. Karim Mansour</h3>
+        <p class="doctor-role">Orthopedic Surgeon</p>
+        <p class="doctor-desc">Expert in sports injuries and joint replacement surgery.</p>
+        <a href="booking.html?doctor=karim-mansour&dept=orthopedics" class="btn-secondary">Book Appointment</a>
+      </div>
+
+      <div class="doctor-full-card" data-department="pediatrics">
+        <div class="doctor-avatar">SY</div>
+        <h3>Dr. Sara Youssef</h3>
+        <p class="doctor-role">Pediatrician</p>
+        <p class="doctor-desc">Dedicated to gentle, thorough care for children of all ages.</p>
+        <a href="booking.html?doctor=sara-youssef&dept=pediatrics" class="btn-secondary">Book Appointment</a>
+      </div>
+
+      <div class="doctor-full-card" data-department="dermatology">
+        <div class="doctor-avatar">LH</div>
+        <h3>Dr. Laila Hassan</h3>
+        <p class="doctor-role">Dermatologist</p>
+        <p class="doctor-desc">Specializes in skin health and advanced cosmetic treatments.</p>
+        <a href="booking.html?doctor=laila-hassan&dept=dermatology" class="btn-secondary">Book Appointment</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Vitalis<span style="color:var(--teal)">Clinic</span></h4>
+        <p>Trusted healthcare, close to home. Quality treatment with a personal touch.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Health St, Cairo</p>
+        <p>+20 100 000 0000</p>
+        <p>info@vitalisclinic.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Vitalis Clinic. All rights reserved. |
+      Designed &amp; Developed by <a href="https://dev-masters404.github.io/Dev-Masters-Protfolio/" target="_blank">Dev Masters</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
