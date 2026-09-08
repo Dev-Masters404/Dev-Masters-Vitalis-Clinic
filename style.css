@@ -643,3 +643,25 @@ footer {
     height: 100%;
     border-radius: 20px;
 }
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-toggle {
+  background: transparent;
+  border: 1.5px solid var(--teal, #0d9488);
+  color: var(--teal, #0d9488);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--teal, #0d9488);
+  color: #fff;
+}

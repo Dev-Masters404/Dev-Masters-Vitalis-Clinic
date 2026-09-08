@@ -12,23 +12,26 @@
   <div class="container navbar">
     <a href="index.html" class="logo">Vitalis<span>Clinic</span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="departments.html">Departments</a>
-      <a href="doctors.html">Doctors</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="booking.html" class="btn-book">Book Now</a>
+      <a href="index.html" data-ar="الرئيسية" data-en="Home">Home</a>
+      <a href="departments.html" data-ar="الأقسام" data-en="Departments">Departments</a>
+      <a href="doctors.html" data-ar="الأطباء" data-en="Doctors">Doctors</a>
+      <a href="about.html" data-ar="من نحن" data-en="About">About</a>
+      <a href="contact.html" class="active" data-ar="تواصل معنا" data-en="Contact">Contact</a>
+      <a href="booking.html" class="btn-book" data-ar="احجز الآن" data-en="Book Now">Book Now</a>
     </nav>
-    <div class="menu-toggle" id="menuToggle">
-      <span></span><span></span><span></span>
+    <div class="navbar-actions">
+      <button class="lang-toggle" id="langToggle" type="button">AR</button>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="page-banner">
   <div class="container">
-    <h1>Get in Touch</h1>
-    <p>Questions, feedback, or need help booking? We're here for you</p>
+    <h1 data-ar="تواصل معنا" data-en="Get in Touch">Get in Touch</h1>
+    <p data-ar="أسئلة، ملاحظات، أو محتاج مساعدة في الحجز؟ إحنا موجودين" data-en="Questions, feedback, or need help booking? We're here for you">Questions, feedback, or need help booking? We're here for you</p>
   </div>
 </section>
 
@@ -37,40 +40,40 @@
     <div class="contact-info-grid">
       <div class="contact-info-card">
         <div class="why-icon">📍</div>
-        <h3>Address</h3>
-        <p>123 Health St, Cairo, Egypt</p>
+        <h3 data-ar="العنوان" data-en="Address">Address</h3>
+        <p data-ar=" كليه الهندسه ، المنوفيه، مصر" data-en="College of Engineering, Monufia, Egypt">123 Health St, Cairo, Egypt</p>
       </div>
       <div class="contact-info-card">
         <div class="why-icon">📞</div>
-        <h3>Phone</h3>
-        <p>+20 100 000 0000</p>
+        <h3 data-ar="التليفون" data-en="Phone">Phone</h3>
+        <p>+20 101 526 3209</p>
       </div>
       <div class="contact-info-card">
         <div class="why-icon">🕒</div>
-        <h3>Working Hours</h3>
-        <p>Sat–Thu: 9:00 AM – 9:00 PM</p>
+        <h3 data-ar="ساعات العمل" data-en="Working Hours">Working Hours</h3>
+        <p data-ar="السبت–الخميس: 9 صباحاً – 9 مساءً" data-en="Sat–Thu: 9:00 AM – 9:00 PM">Sat–Thu: 9:00 AM – 9:00 PM</p>
       </div>
     </div>
 
     <div class="contact-grid">
       <form class="contact-form" id="contactForm">
         <div class="form-group">
-          <label for="contactName">Name</label>
-          <input type="text" id="contactName" placeholder="Your name" required>
+          <label for="contactName" data-ar="الاسم" data-en="Name">Name</label>
+          <input type="text" id="contactName" placeholder="Your name" data-ar-placeholder="اسمك" data-en-placeholder="Your name" required>
         </div>
         <div class="form-group">
-          <label for="contactEmail">Email</label>
-          <input type="email" id="contactEmail" placeholder="you@example.com" required>
+          <label for="contactEmail" data-ar="البريد الإلكتروني" data-en="Email">Email</label>
+          <input type="email" id="contactEmail" placeholder="dev-masters404@gmail.com" required>
         </div>
         <div class="form-group">
-          <label for="contactMessage">Message</label>
-          <textarea id="contactMessage" rows="5" placeholder="How can we help?" required></textarea>
+          <label for="contactMessage" data-ar="الرسالة" data-en="Message">Message</label>
+          <textarea id="contactMessage" rows="5" placeholder="How can we help?" data-ar-placeholder="إزاي نقدر نساعدك؟" data-en-placeholder="How can we help?" required></textarea>
         </div>
-        <button type="submit" class="btn-primary full-width">Send Message</button>
-        <p class="form-success" id="contactSuccess" style="display:none;">✅ Thanks! We'll get back to you soon.</p>
+        <button type="submit" class="btn-primary full-width" data-ar="ابعت الرسالة" data-en="Send Message">Send Message</button>
+        <p class="form-success" id="contactSuccess" style="display:none;" data-ar="✅ شكراً! هنرد عليك قريب." data-en="✅ Thanks! We'll get back to you soon.">✅ Thanks! We'll get back to you soon.</p>
       </form>
 
-      <div class="map-placeholder">🗺️ Map will be embedded here</div>
+      <div class="map-placeholder" data-ar="🗺️ الخريطة هتتحط هنا" data-en="🗺️ Map will be embedded here">🗺️ Map will be embedded here</div>
     </div>
   </div>
 </section>
@@ -80,21 +83,21 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Vitalis<span style="color:var(--teal)">Clinic</span></h4>
-        <p>Trusted healthcare, close to home. Quality treatment with a personal touch.</p>
+        <p data-ar="رعاية صحية موثوقة، قريبة منك. علاج بجودة عالية ولمسة إنسانية." data-en="Trusted healthcare, close to home. Quality treatment with a personal touch.">Trusted healthcare, close to home. Quality treatment with a personal touch.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-ar="روابط سريعة" data-en="Quick Links">Quick Links</h4>
         <ul>
-          <li><a href="departments.html">Departments</a></li>
-          <li><a href="doctors.html">Our Doctors</a></li>
-          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="departments.html" data-ar="الأقسام" data-en="Departments">Departments</a></li>
+          <li><a href="doctors.html" data-ar="أطباؤنا" data-en="Our Doctors">Our Doctors</a></li>
+          <li><a href="booking.html" data-ar="احجز موعد" data-en="Book Appointment">Book Appointment</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>123 Health St, Cairo</p>
-        <p>+20 100 000 0000</p>
-        <p>info@vitalisclinic.com</p>
+        <h4 data-ar="تواصل معنا" data-en="Contact">Contact</h4>
+        <p>123 Health St, Monufia</p>
+        <p>+20 101 526 3209</p>
+        <p>devmasters404@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">

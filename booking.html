@@ -12,23 +12,26 @@
   <div class="container navbar">
     <a href="index.html" class="logo">Vitalis<span>Clinic</span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="departments.html">Departments</a>
-      <a href="doctors.html">Doctors</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="booking.html" class="btn-book active">Book Now</a>
+      <a href="index.html" data-ar="الرئيسية" data-en="Home">Home</a>
+      <a href="departments.html" data-ar="الأقسام" data-en="Departments">Departments</a>
+      <a href="doctors.html" data-ar="الأطباء" data-en="Doctors">Doctors</a>
+      <a href="about.html" data-ar="من نحن" data-en="About">About</a>
+      <a href="contact.html" data-ar="تواصل معنا" data-en="Contact">Contact</a>
+      <a href="booking.html" class="btn-book active" data-ar="احجز الآن" data-en="Book Now">Book Now</a>
     </nav>
-    <div class="menu-toggle" id="menuToggle">
-      <span></span><span></span><span></span>
+    <div class="navbar-actions">
+      <button class="lang-toggle" id="langToggle" type="button">AR</button>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="page-banner">
   <div class="container">
-    <h1>Book an Appointment</h1>
-    <p>Choose your department, doctor, and preferred time — it only takes a minute</p>
+    <h1 data-ar="احجز موعد" data-en="Book an Appointment">Book an Appointment</h1>
+    <p data-ar="اختار القسم والدكتور والوقت المناسب — الموضوع بياخد دقيقة بس" data-en="Choose your department, doctor, and preferred time — it only takes a minute">Choose your department, doctor, and preferred time — it only takes a minute</p>
   </div>
 </section>
 
@@ -37,32 +40,32 @@
     <form class="booking-form" id="bookingForm">
 
       <div class="form-group">
-        <label for="deptSelect">Department</label>
+        <label for="deptSelect" data-ar="القسم" data-en="Department">Department</label>
         <select id="deptSelect" required>
-          <option value="" disabled selected>Select a department</option>
-          <option value="cardiology">Cardiology</option>
-          <option value="dental">Dental Care</option>
-          <option value="neurology">Neurology</option>
-          <option value="orthopedics">Orthopedics</option>
-          <option value="pediatrics">Pediatrics</option>
-          <option value="dermatology">Dermatology</option>
+          <option value="" disabled selected data-ar="اختار قسم" data-en="Select a department">Select a department</option>
+          <option value="cardiology" data-ar="طب القلب" data-en="Cardiology">Cardiology</option>
+          <option value="dental" data-ar="طب الأسنان" data-en="Dental Care">Dental Care</option>
+          <option value="neurology" data-ar="طب الأعصاب" data-en="Neurology">Neurology</option>
+          <option value="orthopedics" data-ar="جراحة العظام" data-en="Orthopedics">Orthopedics</option>
+          <option value="pediatrics" data-ar="طب الأطفال" data-en="Pediatrics">Pediatrics</option>
+          <option value="dermatology" data-ar="الجلدية" data-en="Dermatology">Dermatology</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="doctorSelect">Doctor</label>
+        <label for="doctorSelect" data-ar="الدكتور" data-en="Doctor">Doctor</label>
         <select id="doctorSelect" required disabled>
-          <option value="" disabled selected>Select a department first</option>
+          <option value="" disabled selected data-ar="اختار القسم الأول" data-en="Select a department first">Select a department first</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="apptDate">Preferred Date</label>
+        <label for="apptDate" data-ar="التاريخ المفضل" data-en="Preferred Date">Preferred Date</label>
         <input type="date" id="apptDate" required>
       </div>
 
       <div class="form-group">
-        <label>Preferred Time</label>
+        <label data-ar="الوقت المفضل" data-en="Preferred Time">Preferred Time</label>
         <div class="time-slots-grid" id="timeSlots">
           <button type="button" class="time-slot">9:00 AM</button>
           <button type="button" class="time-slot">10:00 AM</button>
@@ -75,27 +78,27 @@
 
       <div class="form-row">
         <div class="form-group">
-          <label for="patientName">Full Name</label>
-          <input type="text" id="patientName" placeholder="Your full name" required>
+          <label for="patientName" data-ar="الاسم بالكامل" data-en="Full Name">Full Name</label>
+          <input type="text" id="patientName" placeholder="Your full name" data-ar-placeholder="اسمك بالكامل" data-en-placeholder="Your full name" required>
         </div>
         <div class="form-group">
-          <label for="patientAge">Age</label>
-          <input type="number" id="patientAge" placeholder="Age" min="0" required>
+          <label for="patientAge" data-ar="السن" data-en="Age">Age</label>
+          <input type="number" id="patientAge" placeholder="Age" data-ar-placeholder="السن" data-en-placeholder="Age" min="0" required>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="patientPhone">Phone Number</label>
+        <label for="patientPhone" data-ar="رقم الموبايل" data-en="Phone Number">Phone Number</label>
         <input type="tel" id="patientPhone" placeholder="+20 1xx xxx xxxx" required>
       </div>
 
-      <button type="submit" class="btn-book-lg full-width">Confirm Appointment</button>
+      <button type="submit" class="btn-book-lg full-width" data-ar="تأكيد الموعد" data-en="Confirm Appointment">Confirm Appointment</button>
     </form>
 
     <div class="booking-confirmation" id="bookingConfirmation" style="display:none;">
-      <h3>✅ Appointment Request Received</h3>
+      <h3 data-ar="✅ تم استلام طلب الموعد" data-en="✅ Appointment Request Received">✅ Appointment Request Received</h3>
       <p id="confirmationDetails"></p>
-      <p class="confirmation-note">This is a preview — payment and confirmation will be connected soon.</p>
+      <p class="confirmation-note" data-ar="ده عرض تجريبي — الدفع والتأكيد هيتفعّلوا قريب." data-en="This is a preview — payment and confirmation will be connected soon.">This is a preview — payment and confirmation will be connected soon.</p>
     </div>
   </div>
 </section>
@@ -105,21 +108,21 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Vitalis<span style="color:var(--teal)">Clinic</span></h4>
-        <p>Trusted healthcare, close to home. Quality treatment with a personal touch.</p>
+        <p data-ar="رعاية صحية موثوقة، قريبة منك. علاج بجودة عالية ولمسة إنسانية." data-en="Trusted healthcare, close to home. Quality treatment with a personal touch.">Trusted healthcare, close to home. Quality treatment with a personal touch.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-ar="روابط سريعة" data-en="Quick Links">Quick Links</h4>
         <ul>
-          <li><a href="departments.html">Departments</a></li>
-          <li><a href="doctors.html">Our Doctors</a></li>
-          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="departments.html" data-ar="الأقسام" data-en="Departments">Departments</a></li>
+          <li><a href="doctors.html" data-ar="أطباؤنا" data-en="Our Doctors">Our Doctors</a></li>
+          <li><a href="booking.html" data-ar="احجز موعد" data-en="Book Appointment">Book Appointment</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>123 Health St, Cairo</p>
-        <p>+20 100 000 0000</p>
-        <p>info@vitalisclinic.com</p>
+        <h4 data-ar="تواصل معنا" data-en="Contact">Contact</h4>
+        <p>123 Health St, Monufia</p>
+        <p>+20 101 526 3209</p>
+        <p>devmasters404@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">

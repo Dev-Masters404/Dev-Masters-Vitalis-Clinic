@@ -136,3 +136,41 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+// ---------- Language toggle (persists across all pages) ----------
+(function () {
+  const STORAGE_KEY = 'vitalisLang';
+  const langToggle = document.getElementById('langToggle');
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    document.querySelectorAll('[data-ar-html], [data-en-html]').forEach(el => {
+      const html = el.getAttribute(`data-${lang}-html`);
+      if (html) el.innerHTML = html;
+    });
+
+    document.querySelectorAll('[data-ar]:not([data-ar-html]), [data-en]:not([data-en-html])').forEach(el => {
+      const text = el.getAttribute(`data-${lang}`);
+      if (text) el.textContent = text;
+    });
+
+    document.querySelectorAll('[data-ar-placeholder], [data-en-placeholder]').forEach(el => {
+      const placeholder = el.getAttribute(`data-${lang}-placeholder`);
+      if (placeholder) el.placeholder = placeholder;
+    });
+
+    if (langToggle) langToggle.textContent = lang === 'ar' ? 'EN' : 'AR';
+  }
+
+  const savedLang = localStorage.getItem(STORAGE_KEY) || 'ar';
+  applyLang(savedLang);
+
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const next = document.documentElement.lang === 'ar' ? 'en' : 'ar';
+      localStorage.setItem(STORAGE_KEY, next);
+      applyLang(next);
+    });
+  }
+})();
